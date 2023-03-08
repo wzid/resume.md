@@ -1,15 +1,4 @@
-#!/usr/bin/env python3
-import argparse
-import base64
-import itertools
-import logging
-import os
-import re
-import shutil
-import subprocess
-import sys
-import tempfile
-
+import argparse, base64, itertools, logging, os, re, shutil, subprocess, sys, tempfile
 import markdown
 
 preamble = """\
@@ -203,6 +192,7 @@ if __name__ == "__main__":
         logging.basicConfig(level=logging.DEBUG, format="%(message)s")
     else:
         logging.basicConfig(level=logging.INFO, format="%(message)s")
+    
 
     prefix, _ = os.path.splitext(os.path.abspath(args.file))
 
@@ -210,6 +200,7 @@ if __name__ == "__main__":
         md = mdfp.read()
     html = make_html(md, prefix=prefix)
 
+    prefix += "-output/resume"
     if not args.no_html:
         with open(prefix + ".html", "w", encoding="utf-8") as htmlfp:
             htmlfp.write(html)

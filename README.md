@@ -1,11 +1,14 @@
 # resume.md
 
-![Resume](resume.png)
+> Repository Template from [mikepqr/resume.md](https://github.com/mikepqr/resume.md)
+
+![Resume](/images/resume.png)
 
 Write your resume in
-[Markdown](https://raw.githubusercontent.com/mikepqr/resume.md/main/resume.md),
+[Markdown](https://raw.githubusercontent.com/wzid/resume.md/main/resume.md),
 style it with [CSS](resume.css), output to [HTML](resume.html) and
 [PDF](resume.pdf).
+
 
 ## Prerequisites
 
